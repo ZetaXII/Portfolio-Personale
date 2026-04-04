@@ -1,0 +1,63 @@
+:root {
+    --color-white: #DAD7CD;
+    --color-red: #D23232;
+    --color-green-light: #A3B18A;
+    --color-green-normal: #588157;
+    --color-green-medium: #3A5A40;
+    --color-green-dark: #344E41;
+    --color-green-darker: #253B2F;
+    --color-green-black: #18211D;
+}
+
+html,
+body {
+    background: var(--color-green-black);
+}
+
+.nav-logo {
+    font-size: 24px;
+
+    .logo-text {
+        color: var(--color-white);
+    }
+
+    .logo-dot {
+        color: var(--color-red);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn-contacts {
+    background: var(--color-red);
+    border: none;
+    border-radius: 20rem;
+    padding: 1rem 2rem;
+    min-width: 12rem;
+
+    a {
+        color: var(--color-white);
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-green-light);
+    margin: 8rem 0;
+}
