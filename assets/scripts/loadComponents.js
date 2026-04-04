@@ -8,4 +8,11 @@ fetch('/components/about-me/about-me.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('about-me').innerHTML = data;
+        getExperiences();
+    });
+
+fetch('/components/projects/projects.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('projects').innerHTML = data;
     });

@@ -1,4 +1,5 @@
-.presentation {
+/* PRESENTATION STYLE */
+.presentation-container {
     position: relative;
     margin-top: 6rem;
 }
@@ -57,4 +58,33 @@
         width: 22rem;
         bottom: 1.9rem;
     }
+}
+
+/* EXPERIENCES STYLE */
+.experiences-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .experiences-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .experiences-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.experience-name {
+    color: var(--color-green-normal);
+    font-size: 32px;
+}
+
+.experience-years {
+    color: var(--color-white);
+    font-size: 18px;
 }
