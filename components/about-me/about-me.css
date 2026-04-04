@@ -1,6 +1,6 @@
 .presentation {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .presentation-title {
@@ -55,5 +55,6 @@
     @media (max-width: 991px) {
         position: relative;
         width: 22rem;
+        bottom: 1.9rem;
     }
 }
