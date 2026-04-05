@@ -6,10 +6,10 @@ const experiences = [
     { name: "JavaScript", start: 2017 },
     { name: "CSS", start: 2017 },
     { name: "Bootstrap", start: 2019 },
+    { name: "Ionic", start: 2023 },
     { name: "Java", start: 2021 },
     { name: "Spring Boot", start: 2024 },
     { name: "PHP", start: 2018 },
-    { name: "C / C++", start: 2018 },
     { name: "SQL", start: 2017 },
 ];
 

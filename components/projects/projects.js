@@ -1,7 +1,7 @@
 const projects = [
     {
-        name: "Gestionale Aziendale",
-        skills: ["Java", "SQL", "TypeScript", "Angular"],
+        name: "MVMRapp",
+        skills: ["Java", "Android Studio"],
         images: [
             "img1.jpg",
             "img2.jpg",
@@ -9,8 +9,8 @@ const projects = [
         ]
     },
     {
-        name: "Gestionale Aziendale",
-        skills: ["Java", "SQL", "TypeScript", "Angular"],
+        name: "AlcoList",
+        skills: ["Spring Boot", "HTML", "CSS",  "Bootstrap", "JavaScript"],
         images: [
             "img1.jpg",
             "img2.jpg",
@@ -18,8 +18,18 @@ const projects = [
         ]
     },
     {
-        name: "Gestionale Aziendale",
-        skills: ["Java", "SQL", "TypeScript", "Angular"],
+        name: "Spese Mensili",
+        skills: ["Spring Boot", "Angular", "CSS", "Bootstrap", "TypeScript", "Ionic"],
+        images: [
+            "../../assets/images/spese_mensili_images/spese_mensili1.webp",
+            "../../assets/images/spese_mensili_images/spese_mensili2.webp",
+            "../../assets/images/spese_mensili_images/spese_mensili3.webp",
+            "../../assets/images/spese_mensili_images/spese_mensili4.webp"
+        ]
+    },
+    {
+        name: "Progetto: L.I.F.E.",
+        skills: ["HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
             "img1.jpg",
             "img2.jpg",
@@ -27,8 +37,16 @@ const projects = [
         ]
     },
     {
-        name: "Portfolio Dev",
-        skills: ["HTML", "CSS", "JS"],
+        name: "BIG-BURGER",
+        skills: ["Java Servlet", "HTML", "CSS", "Bootstrap", "JavaScript"],
+        images: [
+            "portfolio1.jpg",
+            "portfolio2.jpg"
+        ]
+    },
+    {
+        name: "FOUR Pizza",
+        skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
             "portfolio1.jpg",
             "portfolio2.jpg"
