@@ -12,6 +12,7 @@
 html,
 body {
     background: var(--color-green-black);
+    max-height: 100vh;
 }
 
 .main-container {
