@@ -1,8 +1,16 @@
 const experiences = [
     { name: "Angular", start: 2024 },
-    { name: "React", start: 2023 },
-    { name: "Vue", start: 2024 },
-    { name: "JavaScript", start: 2021 }
+    { name: "TypeScript", start: 2024 },
+    { name: "SCSS", start: 2024 },
+    { name: "HTML", start: 2017 },
+    { name: "JavaScript", start: 2017 },
+    { name: "CSS", start: 2017 },
+    { name: "Bootstrap", start: 2019 },
+    { name: "Java", start: 2021 },
+    { name: "Spring Boot", start: 2024 },
+    { name: "PHP", start: 2018 },
+    { name: "C / C++", start: 2018 },
+    { name: "SQL", start: 2017 },
 ];
 
 function getExperiences() {
