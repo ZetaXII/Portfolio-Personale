@@ -4,8 +4,56 @@
     max-width: clamp(320px, 90vw, 1200px);
     margin: 0 auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    gap: 8rem;
+
+    @media (max-width: 991px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
 }
 
 .contacts-summary {
-    
+    color: var(--color-white);
+    font-size: 24px;
+}
+
+#contacts-idea {
+    min-height: clamp(120px, 40vh, 80px);
+    resize: vertical;
+}
+
+.contacts-field {
+    padding: 1.2rem 0.8rem;
+    background: var(--color-green-darker);
+    border: none;
+    border-bottom: 2px solid var(--color-green-light);
+    color: var(--color-green-light);
+    font-size: 18px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.contacts-field::placeholder {
+    color: var(--color-green-light);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.contacts-field::-webkit-input-placeholder {
+    color: var(--color-green-light);
+}
+
+.contacts-field:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--color-red);
+}
+
+#char-count {
+    color: var(--color-green-light);
+    font-size: 16px;
 }

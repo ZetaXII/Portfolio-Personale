@@ -22,4 +22,5 @@ fetch('/components/contacts/contacts.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('contacts').innerHTML = data;
+        charCounterTextArea();
     });
