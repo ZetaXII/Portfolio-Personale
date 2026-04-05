@@ -1,9 +1,4 @@
 /* PRESENTATION STYLE */
-.presentation-container {
-    position: relative;
-    margin-top: 6rem;
-}
-
 .presentation-title {
     font-size: 64px;
     color: var(--color-green-light);

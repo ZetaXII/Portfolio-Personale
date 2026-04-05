@@ -15,4 +15,11 @@ fetch('/components/projects/projects.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('projects').innerHTML = data;
+        getProjects();
+    });
+
+fetch('/components/contacts/contacts.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('contacts').innerHTML = data;
     });

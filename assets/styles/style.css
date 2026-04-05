@@ -70,3 +70,11 @@ ul {
     background-color: var(--color-green-light);
     margin: 6rem 0;
 }
+
+#about-me, #contacts {
+    margin: 6rem 0 0 0;
+}
+
+#footer {
+    background: var(--color-green-darker);
+}

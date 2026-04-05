@@ -1,0 +1,11 @@
+.container-title-contacts,
+.contacts-container {
+    width: 100%;
+    max-width: clamp(320px, 90vw, 1200px);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contacts-summary {
+    
+}
