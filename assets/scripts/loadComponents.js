@@ -24,3 +24,10 @@ fetch('/components/contacts/contacts.html')
         document.getElementById('contacts').innerHTML = data;
         charCounterTextArea();
     });
+
+fetch('/components/footer/footer.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        document.getElementById("credits-year").innerHTML = new Date().getFullYear();
+    });

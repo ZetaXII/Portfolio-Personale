@@ -15,7 +15,7 @@ body {
     max-height: 100vh;
 }
 
-.main-container {
+.main-container, #footer {
     width: 100%;
     max-width: clamp(320px, 90vw, 1200px);
     margin: 0 auto;
@@ -79,4 +79,10 @@ ul {
 
 #contacts-footer {
     background: var(--color-green-darker);
+    padding-bottom: 4rem;
+}
+
+.credits {
+    background-color: var(--color-red);
+    color: white;
 }

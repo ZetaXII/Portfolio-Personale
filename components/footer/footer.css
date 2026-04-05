@@ -1,0 +1,8 @@
+.footer-credits {
+    margin-top: 4rem
+}
+
+.social-link i{
+    font-size: 52px;
+    color: var(--color-green-light);
+}
