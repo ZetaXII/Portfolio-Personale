@@ -44,20 +44,17 @@ const projects = [
     {
         name: "BIG-BURGER",
         skills: ["Java Servlet", "HTML", "CSS", "Bootstrap", "JavaScript"],
-        images: [
-            "portfolio1.jpg",
-            "portfolio2.jpg"
-        ]
+        images: []
     },
     {
         name: "FOUR Pizza",
         skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
-        images: [
-            "portfolio1.jpg",
-            "portfolio2.jpg"
-        ]
+        images: []
     }
 ];
+
+let modalInstance = null;
+let carouselInstance = null;
 
 function getProjects() {
     const container = document.querySelector('.projects-container');
@@ -65,12 +62,18 @@ function getProjects() {
     container.innerHTML = projects.map((project, index) => `
         <div class="project-item">
 
-            <!-- CAROUSEL -->
             <div id="carousel-${index}" class="carousel slide project-img-wrapper" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     ${project.images.map((img, i) => `
                         <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                            <img src="${img}" alt="${project.name}">
+                            <img 
+                                src="${img}" 
+                                alt="${project.name}" 
+                                class="project-img"
+                                data-project="${index}" 
+                                data-img="${i}"
+                                loading="lazy"
+                            >
                         </div>
                     `).join('')}
                 </div>
@@ -85,15 +88,57 @@ function getProjects() {
                 ` : ''}
             </div>
 
-            <!-- INFO -->
             <h2 class="project-name poppins-bold">${project.name}</h2>
 
             <ul class="project-skills poppins-light d-flex align-items-center gap-3 flex-wrap">
-                ${project.skills.map(skill => `
-                    <li class="skill-item">${skill}</li>
-                `).join('')}
+                ${project.skills.map(skill => `<li class="skill-item">${skill}</li>`).join('')}
             </ul>
 
         </div>
     `).join('');
 }
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("project-img")) {
+        openModal(e.target.dataset.project, e.target.dataset.img);
+    }
+});
+
+function openModal(projectIndex, imageIndex) {
+    const modalEl = document.getElementById('projectModal');
+    const modalInner = document.getElementById("modalCarouselInner");
+    const project = projects[projectIndex];
+
+    if (carouselInstance) {
+        carouselInstance.dispose();
+        carouselInstance = null;
+    }
+
+    modalInner.innerHTML = project.images.map((img, i) => `
+        <div class="carousel-item ${i == imageIndex ? 'active' : ''}">
+            <img src="${img}" class="d-block w-100 modal-img">
+        </div>
+    `).join('');
+
+    if (!modalInstance) {
+        modalInstance = new bootstrap.Modal(modalEl);
+    }
+
+    modalInstance.show();
+
+    modalEl.addEventListener('shown.bs.modal', () => {
+        carouselInstance = new bootstrap.Carousel(
+            document.getElementById('modalCarousel'),
+            { interval: false }
+        );
+    }, { once: true });
+}
+
+document.getElementById('projectModal').addEventListener('hidden.bs.modal', () => {
+    if (carouselInstance) {
+        carouselInstance.dispose();
+        carouselInstance = null;
+    }
+
+    document.getElementById("modalCarouselInner").innerHTML = "";
+});

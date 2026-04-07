@@ -46,3 +46,50 @@
 .project-img-wrapper .carousel-item {
     height: 100%;
 }
+
+.carousel-inner {
+    cursor: pointer;
+}
+
+.modal {
+    overflow: hidden;
+}
+
+.modal-body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 576px) {
+        height: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
+.modal-img {
+    overflow: hidden;
+    max-height: 85vh;
+    object-fit: contain;
+
+    @media (max-width: 576px) {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+.modal-dialog.modal-fullscreen {
+    @media (max-width: 576px) {
+        height: 100dvh;
+        margin: 0;
+    }
+}
+
+.modal-content {
+    @media (max-width: 576px) {
+        height: 100%;
+        overflow: hidden;
+    }
+}
