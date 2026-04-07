@@ -28,6 +28,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .project-name {
@@ -38,4 +39,10 @@
 .project-skills {
     font-size: 18px;
     color: var(--color-white);
+}
+
+.project-img-wrapper .carousel,
+.project-img-wrapper .carousel-inner,
+.project-img-wrapper .carousel-item {
+    height: 100%;
 }

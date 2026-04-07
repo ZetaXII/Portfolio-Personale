@@ -3,18 +3,23 @@ const projects = [
         name: "MVMRapp",
         skills: ["Java", "Android Studio"],
         images: [
-            "img1.jpg",
-            "img2.jpg",
-            "img3.jpg"
+            "../../assets/images/mvmrapp_images/mvmrapp1.webp",
+            "../../assets/images/mvmrapp_images/mvmrapp2.webp",
+            "../../assets/images/mvmrapp_images/mvmrapp3.webp"
         ]
     },
     {
         name: "AlcoList",
-        skills: ["Spring Boot", "HTML", "CSS",  "Bootstrap", "JavaScript"],
+        skills: ["Spring Boot", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
-            "img1.jpg",
-            "img2.jpg",
-            "img3.jpg"
+            "../../assets/images/alcolist_images/alcolist1.webp",
+            "../../assets/images/alcolist_images/alcolist2.webp",
+            "../../assets/images/alcolist_images/alcolist3.webp",
+            "../../assets/images/alcolist_images/alcolist4.webp",
+            "../../assets/images/alcolist_images/alcolist5.webp",
+            "../../assets/images/alcolist_images/alcolist6.webp",
+            "../../assets/images/alcolist_images/alcolist7.webp",
+            "../../assets/images/alcolist_images/alcolist8.webp",
         ]
     },
     {
@@ -29,11 +34,11 @@ const projects = [
     },
     {
         name: "Progetto: L.I.F.E.",
-        skills: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+        skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
-            "img1.jpg",
-            "img2.jpg",
-            "img3.jpg"
+            "../../assets/images/life_images/life1.webp",
+            "../../assets/images/life_images/life2.webp",
+            "../../assets/images/life_images/life3.webp",
         ]
     },
     {
@@ -65,7 +70,7 @@ function getProjects() {
                 <div class="carousel-inner">
                     ${project.images.map((img, i) => `
                         <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                            <img src="${img}" class="d-block w-100" alt="${project.name}">
+                            <img src="${img}" alt="${project.name}">
                         </div>
                     `).join('')}
                 </div>
@@ -83,7 +88,7 @@ function getProjects() {
             <!-- INFO -->
             <h2 class="project-name poppins-bold">${project.name}</h2>
 
-            <ul class="project-skills poppins-light d-flex align-items-center gap-2 flex-wrap">
+            <ul class="project-skills poppins-light d-flex align-items-center gap-3 flex-wrap">
                 ${project.skills.map(skill => `
                     <li class="skill-item">${skill}</li>
                 `).join('')}
