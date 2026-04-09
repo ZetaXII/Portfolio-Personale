@@ -4,10 +4,10 @@ const projects = [
         link: "https://github.com/ZetaXII/MVMRapp",
         skills: ["Java", "Android Studio"],
         images: [
-            "../../assets/images/mvmrapp_images/mvmrapp_cover.webp",
-            "../../assets/images/mvmrapp_images/mvmrapp1.webp",
-            "../../assets/images/mvmrapp_images/mvmrapp2.webp",
-            "../../assets/images/mvmrapp_images/mvmrapp3.webp"
+            "assets/images/mvmrapp_images/mvmrapp_cover.webp",
+            "assets/images/mvmrapp_images/mvmrapp1.webp",
+            "assets/images/mvmrapp_images/mvmrapp2.webp",
+            "assets/images/mvmrapp_images/mvmrapp3.webp"
         ]
     },
     {
@@ -15,15 +15,15 @@ const projects = [
         link: "https://github.com/ZetaXII/AlcoList",
         skills: ["Spring Boot", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
-            "../../assets/images/alcolist_images/alcolist_cover.webp",
-            "../../assets/images/alcolist_images/alcolist1.webp",
-            "../../assets/images/alcolist_images/alcolist2.webp",
-            "../../assets/images/alcolist_images/alcolist3.webp",
-            "../../assets/images/alcolist_images/alcolist4.webp",
-            "../../assets/images/alcolist_images/alcolist5.webp",
-            "../../assets/images/alcolist_images/alcolist6.webp",
-            "../../assets/images/alcolist_images/alcolist7.webp",
-            "../../assets/images/alcolist_images/alcolist8.webp",
+            "assets/images/alcolist_images/alcolist_cover.webp",
+            "assets/images/alcolist_images/alcolist1.webp",
+            "assets/images/alcolist_images/alcolist2.webp",
+            "assets/images/alcolist_images/alcolist3.webp",
+            "assets/images/alcolist_images/alcolist4.webp",
+            "assets/images/alcolist_images/alcolist5.webp",
+            "assets/images/alcolist_images/alcolist6.webp",
+            "assets/images/alcolist_images/alcolist7.webp",
+            "assets/images/alcolist_images/alcolist8.webp",
         ]
     },
     {
@@ -31,11 +31,11 @@ const projects = [
         link: "https://github.com/ZetaXII/SpeseMensiliFE",
         skills: ["Spring Boot", "Angular", "CSS", "Bootstrap", "TypeScript", "Ionic"],
         images: [
-            "../../assets/images/spese_mensili_images/spese_mensili_cover.webp",
-            "../../assets/images/spese_mensili_images/spese_mensili1.webp",
-            "../../assets/images/spese_mensili_images/spese_mensili2.webp",
-            "../../assets/images/spese_mensili_images/spese_mensili3.webp",
-            "../../assets/images/spese_mensili_images/spese_mensili4.webp"
+            "assets/images/spese_mensili_images/spese_mensili_cover.webp",
+            "assets/images/spese_mensili_images/spese_mensili1.webp",
+            "assets/images/spese_mensili_images/spese_mensili2.webp",
+            "assets/images/spese_mensili_images/spese_mensili3.webp",
+            "assets/images/spese_mensili_images/spese_mensili4.webp"
         ]
     },
     {
@@ -43,9 +43,9 @@ const projects = [
         link: "https://github.com/ZetaXII/Progetto-IUM-LIFE",
         skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
-            "../../assets/images/life_images/life_cover.webp",
-            "../../assets/images/life_images/life1.webp",
-            "../../assets/images/life_images/life2.webp",
+            "assets/images/life_images/life_cover.webp",
+            "assets/images/life_images/life1.webp",
+            "assets/images/life_images/life2.webp",
         ]
     },
     {
@@ -53,12 +53,12 @@ const projects = [
         link: "https://github.com/ZetaXII/BIG-BURGER",
         skills: ["Java Servlet", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
-            "../../assets/images/big_burger_images/big_burger_cover.webp",
-            "../../assets/images/big_burger_images/big_burger1.webp",
-            "../../assets/images/big_burger_images/big_burger2.webp",
-            "../../assets/images/big_burger_images/big_burger3.webp",
-            "../../assets/images/big_burger_images/big_burger4.webp",
-            "../../assets/images/big_burger_images/big_burger5.webp"
+            "assets/images/big_burger_images/big_burger_cover.webp",
+            "assets/images/big_burger_images/big_burger1.webp",
+            "assets/images/big_burger_images/big_burger2.webp",
+            "assets/images/big_burger_images/big_burger3.webp",
+            "assets/images/big_burger_images/big_burger4.webp",
+            "assets/images/big_burger_images/big_burger5.webp"
         ]
     },
     {
@@ -66,16 +66,16 @@ const projects = [
         link: "https://github.com/ZetaXII/FOURPizza",
         skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
-            "../../assets/images/four_pizza_images/four_pizza_cover.webp",
-            "../../assets/images/four_pizza_images/four_pizza1.webp",
-            "../../assets/images/four_pizza_images/four_pizza2.webp",
-            "../../assets/images/four_pizza_images/four_pizza3.webp",
-            "../../assets/images/four_pizza_images/four_pizza4.webp",
-            "../../assets/images/four_pizza_images/four_pizza5.webp",
-            "../../assets/images/four_pizza_images/four_pizza6.webp",
-            "../../assets/images/four_pizza_images/four_pizza7.webp",
-            "../../assets/images/four_pizza_images/four_pizza8.webp",
-            "../../assets/images/four_pizza_images/four_pizza9.webp",
+            "assets/images/four_pizza_images/four_pizza_cover.webp",
+            "assets/images/four_pizza_images/four_pizza1.webp",
+            "assets/images/four_pizza_images/four_pizza2.webp",
+            "assets/images/four_pizza_images/four_pizza3.webp",
+            "assets/images/four_pizza_images/four_pizza4.webp",
+            "assets/images/four_pizza_images/four_pizza5.webp",
+            "assets/images/four_pizza_images/four_pizza6.webp",
+            "assets/images/four_pizza_images/four_pizza7.webp",
+            "assets/images/four_pizza_images/four_pizza8.webp",
+            "assets/images/four_pizza_images/four_pizza9.webp",
         ]
     }
 ];
