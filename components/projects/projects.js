@@ -1,8 +1,10 @@
 const projects = [
     {
         name: "MVMRapp",
+        link: "https://github.com/ZetaXII/MVMRapp",
         skills: ["Java", "Android Studio"],
         images: [
+            "../../assets/images/mvmrapp_images/mvmrapp_cover.webp",
             "../../assets/images/mvmrapp_images/mvmrapp1.webp",
             "../../assets/images/mvmrapp_images/mvmrapp2.webp",
             "../../assets/images/mvmrapp_images/mvmrapp3.webp"
@@ -10,8 +12,10 @@ const projects = [
     },
     {
         name: "AlcoList",
+        link: "https://github.com/ZetaXII/AlcoList",
         skills: ["Spring Boot", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
+            "../../assets/images/alcolist_images/alcolist_cover.webp",
             "../../assets/images/alcolist_images/alcolist1.webp",
             "../../assets/images/alcolist_images/alcolist2.webp",
             "../../assets/images/alcolist_images/alcolist3.webp",
@@ -24,8 +28,10 @@ const projects = [
     },
     {
         name: "Spese Mensili",
+        link: "https://github.com/ZetaXII/SpeseMensiliFE",
         skills: ["Spring Boot", "Angular", "CSS", "Bootstrap", "TypeScript", "Ionic"],
         images: [
+            "../../assets/images/spese_mensili_images/spese_mensili_cover.webp",
             "../../assets/images/spese_mensili_images/spese_mensili1.webp",
             "../../assets/images/spese_mensili_images/spese_mensili2.webp",
             "../../assets/images/spese_mensili_images/spese_mensili3.webp",
@@ -34,22 +40,43 @@ const projects = [
     },
     {
         name: "Progetto: L.I.F.E.",
+        link: "https://github.com/ZetaXII/Progetto-IUM-LIFE",
         skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
         images: [
+            "../../assets/images/life_images/life_cover.webp",
             "../../assets/images/life_images/life1.webp",
             "../../assets/images/life_images/life2.webp",
-            "../../assets/images/life_images/life3.webp",
         ]
     },
     {
         name: "BIG-BURGER",
+        link: "https://github.com/ZetaXII/BIG-BURGER",
         skills: ["Java Servlet", "HTML", "CSS", "Bootstrap", "JavaScript"],
-        images: []
+        images: [
+            "../../assets/images/big_burger_images/big_burger_cover.webp",
+            "../../assets/images/big_burger_images/big_burger1.webp",
+            "../../assets/images/big_burger_images/big_burger2.webp",
+            "../../assets/images/big_burger_images/big_burger3.webp",
+            "../../assets/images/big_burger_images/big_burger4.webp",
+            "../../assets/images/big_burger_images/big_burger5.webp"
+        ]
     },
     {
         name: "FOUR Pizza",
+        link: "https://github.com/ZetaXII/FOURPizza",
         skills: ["PHP", "HTML", "CSS", "Bootstrap", "JavaScript"],
-        images: []
+        images: [
+            "../../assets/images/four_pizza_images/four_pizza_cover.webp",
+            "../../assets/images/four_pizza_images/four_pizza1.webp",
+            "../../assets/images/four_pizza_images/four_pizza2.webp",
+            "../../assets/images/four_pizza_images/four_pizza3.webp",
+            "../../assets/images/four_pizza_images/four_pizza4.webp",
+            "../../assets/images/four_pizza_images/four_pizza5.webp",
+            "../../assets/images/four_pizza_images/four_pizza6.webp",
+            "../../assets/images/four_pizza_images/four_pizza7.webp",
+            "../../assets/images/four_pizza_images/four_pizza8.webp",
+            "../../assets/images/four_pizza_images/four_pizza9.webp",
+        ]
     }
 ];
 
@@ -79,18 +106,23 @@ function getProjects() {
                 </div>
 
                 ${project.images.length > 1 ? `
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${index}" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${index}" data-bs-slide="prev" onclick="this.blur()">
+                    <div class="arrow-modal-preview-icon-wrapper d-flex justify-content-center align-items-center">
+                        <span class="carousel-control-prev-icon carousel-contol-preview-icon"></span>
+                    </div>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-${index}" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-${index}" data-bs-slide="next" onclick="this.blur()">
+                    <div class="arrow-modal-preview-icon-wrapper d-flex justify-content-center align-items-center">
+                        <span class="carousel-control-next-icon carousel-contol-preview-icon"></span>
+                    </div>
                 </button>
                 ` : ''}
             </div>
 
-            <h2 class="project-name poppins-bold">${project.name}</h2>
+            <a href="${project.link}" class="project-link"><h2 class="project-name poppins-bold">${project.name}</h2></a>
 
-            <ul class="project-skills poppins-light d-flex align-items-center gap-3 flex-wrap">
+            <ul class="project-skills poppins-light d-flex align-items-center flex-wrap">
                 ${project.skills.map(skill => `<li class="skill-item">${skill}</li>`).join('')}
             </ul>
 
@@ -108,6 +140,8 @@ function openModal(projectIndex, imageIndex) {
     const modalEl = document.getElementById('projectModal');
     const modalInner = document.getElementById("modalCarouselInner");
     const project = projects[projectIndex];
+
+    if (!modalEl || !modalInner) return;
 
     if (carouselInstance) {
         carouselInstance.dispose();
@@ -133,12 +167,3 @@ function openModal(projectIndex, imageIndex) {
         );
     }, { once: true });
 }
-
-document.getElementById('projectModal').addEventListener('hidden.bs.modal', () => {
-    if (carouselInstance) {
-        carouselInstance.dispose();
-        carouselInstance = null;
-    }
-
-    document.getElementById("modalCarouselInner").innerHTML = "";
-});

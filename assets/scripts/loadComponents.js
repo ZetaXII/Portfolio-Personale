@@ -15,7 +15,26 @@ fetch('/components/projects/projects.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('projects').innerHTML = data;
+
         getProjects();
+
+        const modalEl = document.getElementById('projectModal');
+
+        if (modalEl) {
+            modalEl.addEventListener('hidden.bs.modal', () => {
+                if (carouselInstance) {
+                    carouselInstance.dispose();
+                    carouselInstance = null;
+                }
+
+                document.getElementById("modalCarouselInner").innerHTML = "";
+
+                if (document.activeElement) {
+                    document.activeElement.blur();
+                }
+                document.body.focus();
+            });
+        }
     });
 
 fetch('/components/contacts/contacts.html')

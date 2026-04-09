@@ -2,7 +2,12 @@
     margin-top: 4rem
 }
 
-.social-link i{
+.social-link i {
     font-size: 52px;
     color: var(--color-green-light);
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: var(--color-white);
+    }
 }

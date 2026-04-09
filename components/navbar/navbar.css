@@ -9,12 +9,40 @@
     .nav-item {
         text-decoration: none;
         color: var(--color-white);
-        transition: all 0.1s ease-in;
         font-size: 16px;
+        display: inline-block;
+        text-decoration: none;
+        transition: color 0.2s ease, transform 0.2s ease;
+        position: relative;
+    }
 
-        &:hover {
-            text-decoration: underline;
+    .nav-item {
+        margin: 0;
+        position: relative;
+        transition: all 0.2s ease;
+    }
+
+    .nav-item:hover {
+        color: var(--color-red);
+        transform: translateY(-2px);
+
+        h2 {
             color: var(--color-red);
         }
+    }
+
+    .nav-item::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: var(--color-red);
+        transition: width 0.3s ease;
+    }
+
+    .nav-item:hover::after {
+        width: 100%;
     }
 }

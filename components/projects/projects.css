@@ -39,6 +39,8 @@
 .project-skills {
     font-size: 18px;
     color: var(--color-white);
+    column-gap: 1.2rem;
+    row-gap: 0.2rem;
 }
 
 .project-img-wrapper .carousel,
@@ -92,4 +94,86 @@
         height: 100%;
         overflow: hidden;
     }
+}
+
+.carousel-control-prev {
+    left: 0.2rem;
+}
+
+.carousel-control-next {
+    right: 0.2rem;
+}
+
+.arrow-modal-preview-icon-wrapper {
+    background: var(--color-green-dark);
+    color: white !important;
+    padding: 0.8rem;
+    border-radius: 12px;
+}
+
+.arrow-modal-fullscreen-icon-wrapper {
+    background: var(--color-green-dark);
+    color: white !important;
+    padding: 2rem;
+    border-radius: 12px;
+
+    @media (max-width: 1200px) {
+        padding: 0.8rem;
+    }
+}
+
+.carousel-contol-preview-icon {
+    width: 22px;
+    height: 22px;
+
+    @media (max-width: 1200px) {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.carousel-contol-fullscreen-icon {
+    width: 32px;
+    height: 32px;
+
+    @media (max-width: 1200px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.project-link h2 {
+    margin: 0;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+
+    h2 {
+        color: var(--color-red);
+    }
+}
+
+.project-link h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--color-red);
+    transition: width 0.3s ease;
+}
+
+.project-link:hover h2::after {
+    width: 100%;
 }

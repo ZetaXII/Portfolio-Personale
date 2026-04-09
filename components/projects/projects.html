@@ -12,21 +12,27 @@
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content bg-dark">
             <div class="modal-header border-0">
-                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                    onclick="this.blur()"></button>
             </div>
 
             <div class="modal-body d-flex align-items-center">
                 <div id="modalCarousel" class="carousel slide w-100">
                     <div class="carousel-inner" id="modalCarouselInner"></div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
+                    <button class="carousel-control-prev arrow-modal-fullscreen" type="button"
+                        data-bs-target="#modalCarousel" data-bs-slide="prev" onclick="this.blur()">
+                        <div class="arrow-modal-fullscreen-icon-wrapper">
+                            <span class="carousel-control-prev-icon carousel-contol-fullscreen-icon"></span>
+                        </div>
                     </button>
 
                     <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
+                        data-bs-slide="next" onclick="this.blur()">
+                        <div
+                            class="arrow-modal-fullscreen-icon-wrapper d-flex justify-content-center align-items-center">
+                            <span class="carousel-control-next-icon carousel-contol-fullscreen-icon"></span>
+                        </div>
                     </button>
 
                 </div>

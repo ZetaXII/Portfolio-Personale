@@ -1,6 +1,7 @@
 :root {
     --color-white: #DAD7CD;
     --color-red: #D23232;
+    --color-red-dark: #af2e2b;
     --color-green-light: #A3B18A;
     --color-green-normal: #588157;
     --color-green-medium: #3A5A40;
@@ -50,10 +51,16 @@ ul {
     border-radius: 20rem;
     padding: 1.6rem 2.4rem;
     min-width: 16rem;
+    transition: all 0.2s ease;
 
     .btn-text {
         font-size: 18px;
         color: white;
+    }
+
+    &:hover {
+        transform: scale(1.04);
+        background: var(--color-red-dark);
     }
 }
 
