@@ -16,7 +16,8 @@ body {
     max-height: 100vh;
 }
 
-.main-container, #footer {
+.main-container,
+#footer {
     width: 100%;
     max-width: clamp(320px, 90vw, 1200px);
     margin: 0 auto;
@@ -80,7 +81,8 @@ ul {
     margin: 6rem 0;
 }
 
-#about-me, #contacts {
+#about-me,
+#contacts {
     margin: 6rem 0 0 0;
 }
 

@@ -17,7 +17,8 @@
         <input type="text" placeholder="Nome" id="contacts-name" class="w-100 poppins-regular contacts-field">
 
         <!-- TELEFONO -->
-        <input type="tel" placeholder="Telefono" id="contacts-telephone" class="w-100 poppins-regular contacts-field">
+        <input type="tel" placeholder="Telefono" id="contacts-telephone" class="w-100 poppins-regular contacts-field"
+            pattern="^\+?\d{7,15}$">
 
         <!-- IDEA -->
         <textarea placeholder="La tua idea" id="contacts-idea" class="w-100 poppins-regular contacts-field"
@@ -29,4 +30,17 @@
         </button>
 
     </form>
+</div>
+
+<!-- POPUP INOLTRO MAIL -->
+<div id="mail-popup" class="mail-popup">
+    <div class="mail-popup-content">
+        <h2 class="poppins-extrabold">Apertura client mail in corso...</h2>
+        <p class="poppins-regular">
+            Sto preparando la tua mail… in attesa di avvio del client di posta elettronica.
+        </p>
+
+        <!-- SPINNER -->
+        <div class="spinner"></div>
+    </div>
 </div>
