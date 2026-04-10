@@ -30,7 +30,7 @@ function initMailSenderContacts() {
             `Ciao Mario,\n\n` +
             `Sono ${nome} e ti contatto per questa idea:\n\n` +
             `${idea}\n\n` +
-            `Ti lascio il mio recapito telefonico per poter essere ricontattato:\n` +
+            `Ti lascio il mio recapito telefonico per poter essere ricontattato:\n\n` +
             `Tel. ${telefono}\n\n` +
             `Grazie!`
         );
