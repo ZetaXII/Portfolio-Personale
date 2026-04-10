@@ -51,3 +51,23 @@ fetch('components/footer/footer.html')
         document.getElementById('footer').innerHTML = data;
         document.getElementById("credits-year").innerHTML = new Date().getFullYear();
     });
+
+// LOADER INIZIO PAGINA
+document.body.classList.add("loading");
+
+window.addEventListener("load", () => {
+    const dot = document.getElementById("dot");
+
+    // aspetta fade-in
+    setTimeout(() => {
+        dot.style.animation = "expandDot 0.8s ease forwards";
+    }, 400);
+
+    // dopo espansione -> mostra sito
+    setTimeout(() => {
+        document.body.classList.remove("loading");
+        document.body.classList.add("loaded");
+
+        document.getElementById("loader").style.display = "none";
+    }, 800);
+});

@@ -95,3 +95,83 @@ ul {
     background-color: var(--color-red);
     color: white;
 }
+
+/* LOADER FULLSCREEN */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: var(--color-green-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* LOGO */
+.loader-logo {
+    font-size: 42px;
+    opacity: 100%;
+    animation: fadeIn 0.2s ease forwards;
+}
+
+.loader-logo-text {
+    color: var(--color-white);
+}
+
+.loader-logo-dot-text {
+    color: var(--color-red);
+}
+
+.loader-dot-expand {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    background: var(--color-red);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10000;
+}
+
+/* FADE IN LOGO */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ESPANSIONE DOT */
+.expand {
+    animation: expandDot 1s ease forwards;
+}
+
+@keyframes expandDot {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(300);
+    }
+}
+
+/* NASCONDERE CONTENUTO ALL'INIZIO */
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .main-container,
+body.loading #contacts-footer,
+body.loading .credits {
+    opacity: 0;
+}
+
+/* CONTENUTO DOPO */
+body.loaded .main-container,
+body.loaded #contacts-footer,
+body.loaded .credits {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
