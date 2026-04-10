@@ -72,11 +72,38 @@
     }
 }
 
+/* EDUCATION STYLE */
+.education-container {
+    gap: 6rem;
+
+    @media (max-width: 992px) {
+        gap: 2rem;
+    }
+}
+
+.education-img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    margin: 0 0 1.2rem 0;
+}
+
+.education-name {
+    color: var(--color-green-light);
+    font-size: 32px;
+}
+
+.education-years {
+    color: var(--color-white);
+    font-size: 18px;
+}
+
 /* EXPERIENCES STYLE */
 .experiences-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin: 6rem 0 0 0;
 }
 
 @media (max-width: 992px) {
