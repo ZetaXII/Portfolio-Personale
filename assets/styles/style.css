@@ -96,7 +96,7 @@ ul {
     color: white;
 }
 
-/* LOADER FULLSCREEN */
+/* LOADER */
 #loader {
     position: fixed;
     inset: 0;
@@ -108,11 +108,14 @@ ul {
     overflow: hidden;
 }
 
-/* LOGO */
 .loader-logo {
-    font-size: 42px;
+    font-size: 64px;
     opacity: 100%;
     animation: fadeIn 0.2s ease forwards;
+
+    @media (max-width: 991px) {
+        font-size: 32px;
+    }
 }
 
 .loader-logo-text {
