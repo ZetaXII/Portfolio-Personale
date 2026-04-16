@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/portfolio/?$
+RewriteRule ^(.*)$ https://mariozaccardidev.altervista.org/ [R=301,L]
