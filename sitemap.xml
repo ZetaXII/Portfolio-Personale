@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://mariozaccardidev.altervista.org/portfolio/</loc>
+    <loc>https://mariozaccardidev.altervista.org/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://mariozaccardidev.altervista.org/portfolio/#about-me</loc>
+    <loc>https://mariozaccardidev.altervista.org#about-me</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://mariozaccardidev.altervista.org/portfolio/#projects</loc>
+    <loc>https://mariozaccardidev.altervista.org#projects</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://mariozaccardidev.altervista.org/portfolio/#contacts</loc>
+    <loc>https://mariozaccardidev.altervista.org#contacts</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
