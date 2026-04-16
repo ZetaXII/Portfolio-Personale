@@ -7,22 +7,4 @@
     <changefreq>weekly</changefreq>
   </url>
 
-  <url>
-    <loc>https://mariozaccardidev.altervista.org#about-me</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://mariozaccardidev.altervista.org#projects</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://mariozaccardidev.altervista.org#contacts</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
 </urlset>
