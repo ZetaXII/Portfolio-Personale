@@ -127,3 +127,30 @@
     color: var(--color-white);
     font-size: 18px;
 }
+
+/* PALLINI RATING */
+.experience-rating {
+    display: flex;
+    gap: 6px;
+    margin-top: 0.8rem;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-green-black);
+    border: 2px solid var(--color-green-light);
+}
+
+.dot.full {
+    background: var(--color-green-light);
+}
+
+.dot.half {
+    background: linear-gradient(to right, var(--color-green-light) 50%, var(--color-green-black) 50%);
+}
+
+.dot.empty {
+    background: var(--color-green-black);
+}
